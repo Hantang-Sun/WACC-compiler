@@ -1,0 +1,11 @@
+# print in void function
+
+# output:
+# 1
+
+begin
+    int f() is
+        println 1
+    end
+    call f()
+end

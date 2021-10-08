@@ -1,0 +1,12 @@
+# cannot do a constructor call as a method call
+
+begin
+    class test {
+        test() {
+            skip
+        }
+    }
+
+    test t = new test() ;
+    t = t.test()
+end

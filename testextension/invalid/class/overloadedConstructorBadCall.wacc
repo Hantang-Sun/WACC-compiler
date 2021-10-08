@@ -1,0 +1,21 @@
+# if there are multiple constructor give out different error
+
+begin
+    class test {
+        test (int i) {
+            skip
+        }
+
+        test (int i, bool b) {
+            skip
+        }
+
+        test (bool b) {
+            skip
+        }
+    }
+
+    test t = new test('s') ;
+    t = new test(1, 's') ;
+    t = new test(t, 1)
+end

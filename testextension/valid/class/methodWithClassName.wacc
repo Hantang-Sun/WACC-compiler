@@ -1,0 +1,20 @@
+# can have methods with the same name as a constructor
+
+# output:
+# 5
+
+begin
+    class test {
+        test() {
+            skip
+        }
+
+        public int test() is
+            return 5
+        end
+    }
+
+    test t = new test();
+    int x = t.test() ;
+    println x
+end

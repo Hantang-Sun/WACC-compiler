@@ -1,0 +1,13 @@
+# class can have a constructor
+
+begin
+    class test {
+        int a,
+
+        test(int b) {
+            a = b ;
+            println a
+        }
+    }
+    test t = new test(1)
+end

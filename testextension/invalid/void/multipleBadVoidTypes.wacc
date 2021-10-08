@@ -1,0 +1,12 @@
+# multiple illegal void type declarations
+
+begin
+    class Apple {
+        void a,
+
+        public void method(void x) is
+            skip
+        end
+    }
+    void x = 5
+end

@@ -1,0 +1,8 @@
+# paramter with void type
+
+begin
+    int f(void x) is
+        skip
+    end
+    skip
+end

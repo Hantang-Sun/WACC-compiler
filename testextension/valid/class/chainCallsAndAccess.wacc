@@ -1,0 +1,36 @@
+# can chain together method calls and attribute accesses
+
+# output:
+# 2
+# 2
+
+begin
+    class Node {
+        public Node next,
+        public int val,
+
+        Node(Node n, int x) {
+            next = n ;
+            val = x
+        }
+
+        Node(int x) {
+            val = x
+        }
+
+        public Node getNext() is
+            return next
+        end
+
+        public int getVal() is
+            return val
+        end
+    }
+
+    Node n1 = new Node(1) ;
+    Node n2 = new Node(n1, 2) ;
+    int x = n2.getNext().val ;
+    int y = n2.next.getVal() ;
+    println x ;
+    println y
+end

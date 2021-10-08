@@ -1,0 +1,33 @@
+# can chain together method calls
+
+# output:
+# 2
+
+begin
+    class Node {
+        Node next,
+        int val,
+
+        Node(Node n, int x) {
+            next = n ;
+            val = x
+        }
+
+        Node(int x) {
+            val = x
+        }
+
+        public Node getNext() is
+            return next
+        end
+
+        public int getVal() is
+            return val
+        end
+    }
+
+    Node n1 = new Node(2) ;
+    Node n2 = new Node(n1, 2) ;
+    int x = n2.getNext().getVal() ;
+    println x
+end

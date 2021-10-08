@@ -1,0 +1,9 @@
+# read and print in a void function
+
+begin
+    void f(int x) is
+        read x ;
+        println x
+    end
+    call f(0)
+end

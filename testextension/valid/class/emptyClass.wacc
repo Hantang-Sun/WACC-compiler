@@ -1,0 +1,7 @@
+# an empty class is a valid class
+
+begin
+    class test {
+    }
+    skip
+end

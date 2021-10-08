@@ -1,0 +1,8 @@
+# calling void function
+
+begin
+    void f() is
+        skip
+    end
+    call f()
+end

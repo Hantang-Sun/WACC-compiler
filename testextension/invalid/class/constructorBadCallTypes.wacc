@@ -1,0 +1,13 @@
+# give error about parameter count or type mismatch
+
+begin
+    class test {
+        test(int i, int j, int k) {
+            skip
+        }
+    }
+
+    test t = new test(1);
+    t = new test(1, 1, 1, 1) ;
+    t = new test(true, "s", 'c')
+end

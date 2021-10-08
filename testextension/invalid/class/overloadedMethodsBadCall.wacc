@@ -1,0 +1,22 @@
+# should give a different error when method is overloaded
+
+begin
+    class test {
+        test() {
+            skip
+        }
+
+        public int p(int i) is
+           return i
+        end
+
+        public int p(char c) is
+            return 0
+        end
+    }
+
+    test t = new test() ;
+    int x = t.p() ;
+    x = t.p(1, 1) ;
+    x = t.p(true)
+end

@@ -1,0 +1,44 @@
+# Classes can have same method signature as other classes and functions
+
+# output:
+# one
+# two
+# three
+
+begin
+    class test1 {
+
+        test1() {
+            skip
+        }
+
+        public int printOut() is
+            println "one" ;
+            return 0
+        end
+    }
+
+    class test2 {
+
+        test2() {
+            skip
+        }
+
+        public int printOut() is
+           println "two" ;
+           return 0
+        end
+    }
+
+    int printOut() is
+        println "three" ;
+        return 0
+    end
+
+    test1 t1 = new test1() ;
+    test2 t2 = new test2() ;
+    int x = t1.printOut() ;
+    x = t2.printOut() ;
+    x = call printOut()
+end
+

@@ -1,0 +1,44 @@
+# class can have multiple constructors
+
+# output:
+# 1
+#
+# 0
+# b
+# 2
+# s
+
+
+begin
+    class test {
+        public int a,
+        public char b,
+
+        test (int n) {
+            a = n
+        }
+
+        test (char c) {
+            b = c
+        }
+
+        test (int n, char c) {
+            a = n ;
+            b = c
+        }
+
+        public int printab() is
+            println a ;
+            println b ;
+            return 0
+        end
+    }
+
+    test t1 = new test(1) ;
+    test t2 = new test('b') ;
+    test t3 = new test(1, '\0') ;
+    int x = t1.printab() ;
+    int y = t2.printab() ;
+    int z = t3.printab() ;
+
+end

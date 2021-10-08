@@ -1,0 +1,10 @@
+# constructor cannot have a return value
+
+begin
+    class test {
+        test() {
+            return 1
+        }
+    }
+    skip
+end

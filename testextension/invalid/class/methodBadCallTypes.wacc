@@ -1,0 +1,18 @@
+# should error when parameter count / types differ from method's
+
+begin
+    class test {
+        test() {
+            skip
+        }
+
+        public int p(int i) is
+           return i
+        end
+    }
+
+    test t = new test() ;
+    int x = t.p() ;
+    x = t.p(1, 1) ;
+    x = t.p(true)
+end

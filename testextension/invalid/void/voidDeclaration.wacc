@@ -1,0 +1,5 @@
+# declare variable with type void
+
+begin
+    void x = 5
+end

@@ -1,0 +1,12 @@
+begin
+    class test {
+        test() {
+            skip
+        }
+
+        int get() is
+            skip
+        end
+    }
+    skip
+end

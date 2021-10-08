@@ -1,0 +1,22 @@
+# cannot call methods that are not in your class
+
+begin
+    class test {
+        test() {
+            skip
+        }
+    }
+
+    class test2 {
+        public int run() is
+            return 1
+        end
+    }
+
+    int run() is
+        return 2
+    end
+
+    test t = new test() ;
+    int i = t.run()
+end

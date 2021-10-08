@@ -1,0 +1,5 @@
+# cannot create object of a class that doesn't exist
+
+begin
+    test t = new test()
+end

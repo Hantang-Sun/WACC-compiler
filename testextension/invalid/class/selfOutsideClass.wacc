@@ -1,0 +1,11 @@
+# cannot use self outside of class context
+
+begin
+    int f(int x) is
+        self.x = 1 ;
+        return 10
+    end
+
+    int x = 1;
+    self.x = 2
+end

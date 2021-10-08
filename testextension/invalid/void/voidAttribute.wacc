@@ -1,0 +1,8 @@
+# declare attribute with type void
+
+begin
+    class Apple {
+        void a,
+    }
+    skip
+end

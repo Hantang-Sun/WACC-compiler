@@ -1,0 +1,22 @@
+#class can have a method
+
+# output:
+# 1
+
+begin
+    class test {
+        int num,
+
+        test (int j) {
+            num = j
+        }
+
+        public int getNum() is
+            return num
+        end
+    }
+
+    test t = new test(1) ;
+    int i = t.getNum() ;
+    println i
+end

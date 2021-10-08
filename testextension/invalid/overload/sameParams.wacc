@@ -1,0 +1,12 @@
+begin
+    int f() is
+        return 1
+    end
+    char f() is
+        return 'a'
+    end
+    int x = call f() ;
+    char a = call f() ;
+    println x ;
+    println a
+end

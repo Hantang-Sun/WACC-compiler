@@ -1,0 +1,7 @@
+begin
+int i = 0 ;
+do
+i = i + 1 ;
+println i
+until (i > 10)
+end

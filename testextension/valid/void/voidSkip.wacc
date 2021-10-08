@@ -1,0 +1,8 @@
+# void function declaration
+
+begin
+    void f() is
+        skip
+    end
+    skip
+end

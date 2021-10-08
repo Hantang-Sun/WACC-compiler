@@ -1,0 +1,14 @@
+# print a value returned by another function
+
+begin
+    int f() is
+        return 5
+    end
+
+    void g(int x) is
+        println x
+    end
+
+    int x = call f() ;
+    call g(x)
+end

@@ -1,0 +1,31 @@
+# print params of base type in void functions
+
+# output:
+# 1
+# true
+# Hello
+# a
+
+begin
+
+    void printInt(int a) is
+        println a
+    end
+
+    void printBool(bool b) is
+        println b
+    end
+
+    void printString(string s) is
+        println s
+    end
+
+    void printChar(char c) is
+        println c
+    end
+
+    call printInt(1) ;
+    call printBool(true) ;
+    call printString("Hello") ;
+    call printChar('a')
+end

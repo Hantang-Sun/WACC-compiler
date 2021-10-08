@@ -1,0 +1,13 @@
+begin
+    int f(int i) is
+        int[] a = [65, 66, 67] ;
+        return a[i]
+    end
+    char f(int i) is
+        int x = call f(i) ;
+        char y = chr x ;
+        return y
+    end
+    char B = call f(1) ;
+    println B
+end

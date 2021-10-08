@@ -1,0 +1,14 @@
+# ignore return value of a function
+
+# output:
+# 5
+
+begin
+    int f() is
+        int x = 5 ;
+        println x ;
+        return x
+    end
+
+    call f()
+end

@@ -1,0 +1,16 @@
+#!/usr/bin/python
+# Ruby front-end for your compiler.
+# You are free to change the language used for this script,
+# but do *not* change its name.
+
+import os
+import sys
+
+if len(sys.argv) <= 1 :
+    exit = os.system("java -cp bin:lib/antlr-4.7-complete.jar compiler.Main")
+else:
+    exit = os.system("java -cp bin:lib/antlr-4.7-complete.jar compiler.Main " +str(sys.argv[1]))
+
+
+sys.exit(exit >> 8)
+

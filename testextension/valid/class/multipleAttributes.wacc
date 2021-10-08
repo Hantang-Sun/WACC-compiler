@@ -1,0 +1,13 @@
+# class fields can be any type
+
+begin
+    class test {
+        test a,
+        int b,
+        char c,
+        string s,
+        pair(int, int) pii,
+        int[] xs,
+    }
+    skip
+end

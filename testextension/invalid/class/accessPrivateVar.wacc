@@ -1,0 +1,14 @@
+# error on accessing private class fields outside class
+
+begin
+    class test {
+        int a,
+
+        test() {
+            skip
+        }
+    }
+
+    test t = new test() ;
+    int x = t.a
+end

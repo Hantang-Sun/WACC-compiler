@@ -1,0 +1,40 @@
+# class can have an empty constructor and its fields are given default values
+
+# output:
+# nil
+# nil
+# nil
+#
+#
+# 0
+
+
+begin
+    class test {
+        pair(int, int) pii,
+        int[] xs,
+        #string s,
+        test t,
+        int x,
+        char c,
+
+
+        test() {
+            skip
+        }
+
+        public int printOut() is
+            println pii ;
+            println xs ;
+            #println s ;
+            println t ;
+            println x ;
+            println c ;
+            return 0
+        end
+
+    }
+
+    test t1 = new test() ;
+    int x = t1.printOut()
+end

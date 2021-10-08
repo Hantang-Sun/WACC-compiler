@@ -1,0 +1,22 @@
+# can access public variables outside of class
+
+# output:
+# 0
+# nil
+
+begin
+    class test {
+        public int x,
+        public test t,
+
+        test() {
+            skip
+        }
+    }
+
+    test t = new test() ;
+    int x = t.x ;
+    t = t.t ;
+    println x ;
+    println t
+end

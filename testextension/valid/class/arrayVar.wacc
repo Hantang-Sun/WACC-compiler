@@ -1,0 +1,22 @@
+begin
+    class test {
+        int[] xs,
+
+        test(int[] ns) {
+            xs = ns
+        }
+
+        public int printAll() is
+            int i = 0;
+            for (int i = 0, i < len xs, i = i + 1)
+                println xs[i]
+            done;
+            return 1
+        end
+    }
+
+    int[] ys = [1,2,3] 
+    # ;
+    # test t = new test(ys) ;
+    # t.printAll()
+end

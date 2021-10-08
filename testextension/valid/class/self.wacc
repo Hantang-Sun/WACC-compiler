@@ -1,0 +1,30 @@
+# can access class fields through 'self.[field name]'
+
+# output:
+# 1
+# 2
+
+begin
+    class test {
+        int x,
+
+        test(int x) {
+            self.x = x
+        }
+
+        public void setX(int x) is
+            self.x = x ;
+            return 0
+        end
+
+        public void printOut() is
+            println x ;
+            return 0
+        end
+    }
+
+    test t = new test(1) ;
+    t.printOut() ;
+    t.setX(2) ;
+    t.printOut()
+end

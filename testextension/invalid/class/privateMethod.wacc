@@ -1,0 +1,12 @@
+# trying to access private method outside class
+
+begin
+    class test {
+        int get() is
+            return 1
+        end
+    }
+
+    test t = new test() ;
+    int x = t.get()
+end

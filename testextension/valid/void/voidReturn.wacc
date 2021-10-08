@@ -1,0 +1,8 @@
+# return of void function is ignored
+
+begin
+    void f() is
+        return 5
+    end
+    call f()
+end

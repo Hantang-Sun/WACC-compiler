@@ -1,0 +1,41 @@
+# class can overload methods
+
+# output:
+# 1
+# a
+# 2
+# b
+
+begin
+    class test {
+        int i,
+        char b,
+
+        test(int j, char c) {
+            i = j ;
+            b = c
+        }
+
+        public void printVar() is
+            println i ;
+            println b ;
+            return 0
+        end
+
+        public void setVar(int j) is
+            i = j ;
+            return 0
+        end
+
+        public void setVar(char c) is
+            b = c ;
+            return 0
+        end
+    }
+
+    test t = new test(1, 'a') ;
+    t.printVar() ;
+    t.setVar(2) ;
+    t.setVar('b') ;
+    t.printVar()
+end

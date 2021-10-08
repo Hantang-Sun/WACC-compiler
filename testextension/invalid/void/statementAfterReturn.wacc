@@ -1,0 +1,9 @@
+# extra statement after return statement
+
+begin
+    void f() is
+        return 5;
+        println 5
+    end
+    skip
+end

@@ -1,0 +1,28 @@
+# can access public fields of public fields.
+
+# output:
+# 2
+# 1
+
+begin
+    class Node {
+        public Node next,
+        public int val,
+
+        Node(Node n, int x) {
+            next = n ;
+            val = x
+        }
+
+        Node(int x) {
+            val = x
+        }
+    }
+
+    Node n1 = new Node(1) ;
+    Node n2 = new Node(n1, 2) ;
+    int x = n2.val ;
+    int y = n2.next.val ;
+    println x ;
+    println y
+end

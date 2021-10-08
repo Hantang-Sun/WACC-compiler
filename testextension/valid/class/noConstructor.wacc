@@ -1,0 +1,8 @@
+# can create an object of a class with no constructor
+
+begin
+    class test {
+    }
+
+    test t = new test()
+end

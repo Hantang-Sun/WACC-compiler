@@ -1,0 +1,8 @@
+# class can have a field
+
+begin
+    class test {
+        int test,
+    }
+    skip
+end
